@@ -10,6 +10,12 @@ from sklearn.naive_bayes import MultinomialNB
 from sklearn.metrics import accuracy_score, precision_score
 import joblib
 
+import nltk
+
+nltk.download("punkt")
+nltk.download("punkt_tab")
+nltk.download("stopwords")
+
 # Load Dataset
 df = pd.read_csv("dataset/spam.csv", encoding="latin-1")
 

@@ -5,6 +5,12 @@ from utils.text_preprocessor import transform_text
 
 import os
 
+import nltk
+
+nltk.download("punkt")
+nltk.download("punkt_tab")
+nltk.download("stopwords")
+
 # Flask App
 app = Flask(__name__)
 
